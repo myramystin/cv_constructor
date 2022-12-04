@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4 class="title" xmlns="http://www.w3.org/1999/html">
+  Insert your information:
+</h4>
+<form action="#" method="POST" enctype="multipart/form-data">
+    <p> Name:</p>
+    <p><input type="text" name="name" required placeholder="Ivan" value="{{ cv.name }}" maxlength="100"/></p>
+    <p> Surname:</p>
+    <p><input type="text" name="surname" required placeholder="Ivanov" value="{{ cv.surname }}" maxlength="100"/></p>
+    <p> Birth date:</p>
+    <p><input type="date" name="birth_date" required value="{{ cv.birth_date }}" /></p>
+    <p> Previous occupation:</p>
+    <p><textarea rows="10" cols="45" name="occupation" placeholder="Tell employers about your experience" maxlength="1000" >{{ cv.occupation }}</textarea></p>
+    <p> Education:</p>
+    <p><textarea rows="10" cols="45" name="education" placeholder="Tell employers about your education" maxlength="1000">{{ cv.education }}</textarea></p>
+    <p> Image: </p>
+    <p><input type="file" name="image" accept="image/png jpg jpeg"/></p>
+
+    <p><input class="input_btn" name="action" type="submit" value="download"/>       <input class="save_btn" name="action" type="submit" value="save draft"/>    </p>
+</form>
+
+
+{% endblock %}
+
+
+
+

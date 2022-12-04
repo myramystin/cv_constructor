@@ -1,0 +1,10 @@
+flask
+flask_migrate
+flask_sqlalchemy
+flask_login
+flask_wtf
+wtforms
+flask-script
+flask-migrate
+pdfkit
+wkhtmltopdf

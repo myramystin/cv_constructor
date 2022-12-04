@@ -1,0 +1,16 @@
+.input_btn{
+  display: inline-block;
+  color: azure;
+  background-color: #622432;
+  border-color: #622432;
+  border-radius: 4px;
+}
+
+.save_btn{
+  display: inline-block;
+  color: azure;
+  background-color: #263d6e;
+  border-color: #263d6e;
+  border-radius: 4px;
+}
+
