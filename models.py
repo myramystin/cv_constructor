@@ -8,6 +8,7 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(100))
     name = db.Column(db.String(1000))
 
+
 class CV(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))
